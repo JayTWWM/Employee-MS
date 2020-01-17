@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rpur">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarViewEmploy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dateTextEmploy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/calendarViewEmploy"
+            android:background="@drawable/rounder"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:textColor="#1b1b1b" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/DetailEmploy"
+            android:background="@drawable/rounder"
+            android:text="No Event."
+            android:layout_below="@id/dateTextEmploy"
+            android:layout_marginTop="16dp"
+            android:textColor="#1b1b1b"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Event Description"
+            android:padding="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/DetailsEditEmploy"
+            android:background="@drawable/rounded_corner"
+            android:layout_below="@id/DetailEmploy"
+            android:layout_marginTop="16dp"
+            android:textColor="#1b1b1b"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DetailsEditEmploy"
+            android:background="@drawable/button_round_border"
+            android:text="Add Event"
+            android:id="@+id/AddEmploy"
+            android:textColor="#fff"
+            android:padding="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

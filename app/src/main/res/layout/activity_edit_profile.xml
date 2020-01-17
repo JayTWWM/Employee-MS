@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile"
+    android:background="@drawable/rpur">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent1">
+
+            <RelativeLayout
+                android:id="@+id/parentPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop">
+
+                <ImageView
+                    android:id="@+id/ProfilePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/smart" />
+
+                <Button
+                    android:id="@+id/ProfilePicEdit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@id/ProfilePic"
+                    android:layout_toRightOf="@id/ProfilePic"
+                    android:background="@drawable/ic_edit_black" />
+
+                <EditText
+                    android:id="@+id/ProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@id/ProfilePic"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:textColor="#1b1b1b"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ProfileDesignation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ProfileName"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/ProfilePic"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/parent2"
+            android:layout_below="@id/parent1">
+
+            <RelativeLayout
+                android:id="@+id/ContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DepartmentInfo"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounder"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="Contact Information:"
+                    android:textColor="#000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/information"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ProfileContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ProfileEmail"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DepartmentInfo"
+                android:padding="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounder">
+
+                <TextView
+                    android:id="@+id/DepartmentInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department Information:"
+                    android:paddingLeft="16dp"
+                    android:textSize="24sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ProfileInfo"
+                    android:layout_below="@id/DepartmentInformation"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Buttons"
+            android:layout_below="@id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="100dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:id="@+id/Confirm"
+                android:background="@drawable/button_round_border"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Change"
+                android:text="Change"
+                android:background="@drawable/button_round_border"
+                android:textColor="#fff"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_home"
+    android:background="@drawable/rpur">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parent1">
+
+                <RelativeLayout
+                    android:id="@+id/parentPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop">
+
+                    <ImageView
+                        android:id="@+id/ProfilePic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/smart" />
+
+                    <TextView
+                        android:id="@+id/ProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toRightOf="@id/ProfilePic"
+                        android:textColor="#1b1b1b"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ProfileDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ProfileName"
+                        android:layout_marginLeft="72dp"
+                        android:layout_toRightOf="@id/ProfilePic"
+                        android:textColor="#1b1b1b"
+                        android:textSize="28sp"
+                        android:layout_marginBottom="24dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/parent2"
+                android:layout_below="@id/parent1">
+
+                <RelativeLayout
+                    android:id="@+id/ContactInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/DepartmentInfo"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounder"
+                    android:padding="40dp">
+
+                    <TextView
+                        android:id="@+id/information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:text="Contact Information:"
+                        android:textColor="#1b1b1b"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ProfileEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/information"
+                        android:paddingLeft="16dp"
+                        android:textColor="#1b1b1b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/ProfileContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ProfileEmail"
+                        android:paddingLeft="16dp"
+                        android:textColor="#1b1b1b"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DepartmentInfo"
+                    android:padding="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounder">
+
+                    <TextView
+                        android:id="@+id/DepartmentInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department Information:"
+                        android:paddingLeft="16dp"
+                        android:textSize="24sp"
+                        android:textColor="#1b1b1b"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ProfileInfo"
+                        android:textColor="#1b1b1b"
+                        android:layout_below="@id/DepartmentInformation"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/ic_edit_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

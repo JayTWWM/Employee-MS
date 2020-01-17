@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePage"
+    android:background="@drawable/rpur">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parent1page">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/parent1pageInner">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AppTheme">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbarEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="#f7273c">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Home"
+                                    android:textColor="#1b1b1b"
+                                    android:textSize="32sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/signOut"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:background="@drawable/ic_signout_black"
+                                    android:onClick="SignOutEmploy" />
+
+                            </RelativeLayout>
+
+                        </androidx.appcompat.widget.Toolbar>
+
+                    </com.google.android.material.appbar.AppBarLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/parentPicpage"
+                    android:layout_below="@id/parent1pageInner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop">
+
+                    <ImageView
+                        android:id="@+id/ProfilePicpage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/smart" />
+
+                    <TextView
+                        android:id="@+id/ProfileNamepage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toRightOf="@id/ProfilePicpage"
+                        android:textColor="#1b1b1b"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ProfileDesignationpage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ProfileNamepage"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_toRightOf="@id/ProfilePicpage"
+                        android:textColor="#1b1b1b"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/parent2page"
+                android:layout_below="@id/parent1page">
+
+                <RelativeLayout
+                    android:padding="48dp"
+                    android:id="@+id/ContactInfopage"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/DepartmentInfopage"
+                    android:background="@drawable/rounder">
+
+                    <TextView
+                        android:id="@+id/informationpage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Information:"
+                        android:paddingLeft="16dp"
+                        android:textSize="28sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ProfileEmailpage"
+                        android:textColor="#000"
+                        android:layout_below="@id/informationpage"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ProfileContactpage"
+                        android:layout_below="@id/ProfileEmailpage"
+                        android:textColor="#000"
+                        android:textSize="17sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DepartmentInfopage"
+                    android:padding="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounder">
+
+                    <TextView
+                        android:id="@+id/DepartmentInformationpage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department Information:"
+                        android:paddingLeft="16dp"
+                        android:textSize="24sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ProfileInfopage"
+                        android:textColor="#000"
+                        android:layout_below="@id/DepartmentInformationpage"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/EmployFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/ic_edit_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AnnounceFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/ic_announcement_black"
+        android:layout_alignParentBottom="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/EventFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/ic_event_note_black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

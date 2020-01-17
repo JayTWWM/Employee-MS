@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twwm.ems">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smart"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smart"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EventsEmploy"></activity>
+        <activity android:name=".AnnouncementEmploy" />
+        <activity
+            android:name=".NavigationEmploy"
+            android:label="@string/title_activity_navigation_employ"
+            android:parentActivityName=".LoginEmploy"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twwm.ems.LoginEmploy" />
+        </activity>
+        <activity android:name=".EditProfile" />
+        <activity
+            android:name=".NavigationAdmin"
+            android:label="@string/title_activity_navigation_admin"
+            android:parentActivityName=".LoginAdmin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twwm.ems.LoginAdmin" />
+        </activity>
+        <activity android:name=".EmployInfo" />
+        <activity android:name=".LoginAdmin" />
+        <activity android:name=".LoginEmploy" />
+        <activity
+            android:name=".ui.LoginEmploy"
+            android:label="@string/title_activity_login_employ" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

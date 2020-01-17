@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F905"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/mailFollow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Numbers and Email Ids are given below:"
+                android:textColor="#000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Address"
+                android:padding="16dp"
+                android:background="@drawable/logo">
+
+                <TextView
+                    android:id="@+id/Jay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/rounder"
+                    android:padding="24dp"
+                    android:paddingHorizontal="16dp"
+                    android:text="Jay Mehta:\nPhone: 7506604268\nEmail: jaymehta262001@gmail.com"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Jay"
+                    android:id="@+id/Darsh"
+                    android:layout_marginTop="16dp"
+                    android:text="Darsh Mehta:\nPhone: 8104724785\nEmail: darshmehta12100@gmail.com"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:padding="24dp"
+                    android:background="@drawable/rounder"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

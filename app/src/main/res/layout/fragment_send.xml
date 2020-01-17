@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rpur">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="EMPLOYEE MANAGEMENT SYSTEM"
+            android:textSize="22.28573513dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="24dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/AboutLogo"
+            android:layout_below="@id/title"/>
+
+
+        <TextView
+            android:layout_below="@id/AboutLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:padding="24dp"
+            android:textSize="20sp"
+            android:text="An Employee management system is designed to simplify the process of record maintenance of employees in an organisation. It helps in managing the information of employees for HR functions. In general, employee management system is a part of a comprehensive Human Resource Management System."/>
+
+    </RelativeLayout>
+
+</ScrollView>

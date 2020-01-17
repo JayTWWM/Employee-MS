@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "211291627645",
+    "firebase_url": "https://emsfirebaseproject-3a3ac.firebaseio.com",
+    "project_id": "emsfirebaseproject-3a3ac",
+    "storage_bucket": "emsfirebaseproject-3a3ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211291627645:android:46560ac189fced3afd1114",
+        "android_client_info": {
+          "package_name": "com.twwm.ems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211291627645-dk333mqual27g4oirika1h3jn1a0aiio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twwm.ems",
+            "certificate_hash": "4df58ced340c6a17c0fa53db48b3e6a511fd0e20"
+          }
+        },
+        {
+          "client_id": "211291627645-mnm9k1s50tp68sq5rlotlgoruqujt1ln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twwm.ems",
+            "certificate_hash": "0ffcd3418730b0e9af011bdeb0c05f46419b13ca"
+          }
+        },
+        {
+          "client_id": "211291627645-lvrvb66kd25gu78strahb5burblid402.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmHfJnroXJksq_3PFvkNfAylsLR4y9s7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211291627645-lvrvb66kd25gu78strahb5burblid402.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
